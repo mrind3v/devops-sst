@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Ubuntu terminal showing interface and identity networking commands">
+  <rect width="1600" height="900" fill="#1e1e1e"/>
+  <rect width="1600" height="58" fill="#303030"/>
+  <circle cx="30" cy="29" r="10" fill="#ff5f57"/><circle cx="62" cy="29" r="10" fill="#ffbd2e"/><circle cx="94" cy="29" r="10" fill="#28c840"/>
+  <text x="800" y="37" fill="#d4d4d4" font-family="Menlo, Consolas, monospace" font-size="20" text-anchor="middle">Ubuntu — bash</text>
+  <g font-family="Menlo, Consolas, monospace" font-size="24" xml:space="preserve">
+    <text x="42" y="108" fill="#8be9fd">root@ubuntu</text><text x="212" y="108" fill="#f8f8f2">:/# ip a</text>
+    <text x="42" y="149" fill="#f8f8f2">1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 state UNKNOWN</text>
+    <text x="42" y="190" fill="#f8f8f2">    inet 127.0.0.1/8 scope host lo</text>
+    <text x="42" y="231" fill="#f8f8f2">2: eth0@if5: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 state UP</text>
+    <text x="42" y="272" fill="#f8f8f2">    inet 172.17.0.2/16 brd 172.17.255.255 scope global eth0</text>
+    <text x="42" y="338" fill="#8be9fd">root@ubuntu</text><text x="212" y="338" fill="#f8f8f2">:/# ifconfig</text>
+    <text x="42" y="379" fill="#f8f8f2">eth0: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500</text>
+    <text x="42" y="420" fill="#f8f8f2">        inet 172.17.0.2  netmask 255.255.0.0  broadcast 172.17.255.255</text>
+    <text x="42" y="461" fill="#f8f8f2">lo: flags=73&lt;UP,LOOPBACK,RUNNING&gt;  mtu 65536</text>
+    <text x="42" y="502" fill="#f8f8f2">        inet 127.0.0.1  netmask 255.0.0.0</text>
+    <text x="42" y="568" fill="#8be9fd">root@ubuntu</text><text x="212" y="568" fill="#f8f8f2">:/# hostname</text>
+    <text x="42" y="609" fill="#50fa7b">ubuntu-container</text>
+    <text x="42" y="675" fill="#8be9fd">root@ubuntu</text><text x="212" y="675" fill="#f8f8f2">:/# whoami</text>
+    <text x="42" y="716" fill="#50fa7b">root</text>
+  </g>
+</svg>

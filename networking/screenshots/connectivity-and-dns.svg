@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1180" viewBox="0 0 1600 1180" role="img" aria-label="Ubuntu terminal showing connectivity and DNS networking commands">
+  <rect width="1600" height="1180" fill="#1e1e1e"/>
+  <rect width="1600" height="58" fill="#303030"/>
+  <circle cx="30" cy="29" r="10" fill="#ff5f57"/><circle cx="62" cy="29" r="10" fill="#ffbd2e"/><circle cx="94" cy="29" r="10" fill="#28c840"/>
+  <text x="800" y="37" fill="#d4d4d4" font-family="Menlo, Consolas, monospace" font-size="20" text-anchor="middle">Ubuntu — bash</text>
+  <g font-family="Menlo, Consolas, monospace" font-size="22" xml:space="preserve">
+    <text x="42" y="102" fill="#8be9fd">root@ubuntu</text><text x="200" y="102" fill="#f8f8f2">:/# ping -c 2 example.com</text>
+    <text x="42" y="140" fill="#f8f8f2">PING example.com (104.20.23.154) 56(84) bytes of data.</text>
+    <text x="42" y="178" fill="#f8f8f2">64 bytes from 104.20.23.154: icmp_seq=1 ttl=63 time=19.0 ms</text>
+    <text x="42" y="216" fill="#f8f8f2">64 bytes from 104.20.23.154: icmp_seq=2 ttl=63 time=19.7 ms</text>
+    <text x="42" y="254" fill="#f8f8f2">2 packets transmitted, 2 received, 0% packet loss</text>
+    <text x="42" y="310" fill="#8be9fd">root@ubuntu</text><text x="200" y="310" fill="#f8f8f2">:/# nslookup example.com</text>
+    <text x="42" y="348" fill="#f8f8f2">Server:  192.168.65.7</text>
+    <text x="42" y="386" fill="#f8f8f2">Non-authoritative answer:</text>
+    <text x="42" y="424" fill="#f8f8f2">Name:    example.com</text>
+    <text x="42" y="462" fill="#f8f8f2">Address: 104.20.23.154</text>
+    <text x="42" y="518" fill="#8be9fd">root@ubuntu</text><text x="200" y="518" fill="#f8f8f2">:/# curl -I https://example.com</text>
+    <text x="42" y="556" fill="#f8f8f2">HTTP/2 200</text>
+    <text x="42" y="594" fill="#f8f8f2">content-type: text/html</text>
+    <text x="42" y="632" fill="#f8f8f2">server: cloudflare</text>
+    <text x="42" y="688" fill="#8be9fd">root@ubuntu</text><text x="200" y="688" fill="#f8f8f2">:/# traceroute -m 3 example.com</text>
+    <text x="42" y="726" fill="#f8f8f2">1  172.17.0.1 (172.17.0.1)  0.051 ms  0.007 ms  0.006 ms</text>
+    <text x="42" y="764" fill="#f8f8f2">2  * * *</text>
+    <text x="42" y="820" fill="#8be9fd">root@ubuntu</text><text x="200" y="820" fill="#f8f8f2">:/# telnet example.com 80</text>
+    <text x="42" y="858" fill="#f8f8f2">Trying 104.20.23.154...</text>
+    <text x="42" y="896" fill="#50fa7b">Connected to example.com.</text>
+    <text x="42" y="952" fill="#8be9fd">root@ubuntu</text><text x="200" y="952" fill="#f8f8f2">:/# host example.com</text>
+    <text x="42" y="990" fill="#f8f8f2">example.com has address 104.20.23.154</text>
+    <text x="42" y="1028" fill="#f8f8f2">example.com has address 172.66.147.243</text>
+  </g>
+</svg>
