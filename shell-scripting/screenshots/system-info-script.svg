@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="Ubuntu terminal showing system information script execution">
+  <rect width="1600" height="1000" fill="#1e1e1e"/>
+  <rect x="0" y="0" width="1600" height="58" fill="#303030"/>
+  <circle cx="30" cy="29" r="10" fill="#ff5f57"/>
+  <circle cx="62" cy="29" r="10" fill="#ffbd2e"/>
+  <circle cx="94" cy="29" r="10" fill="#28c840"/>
+  <text x="800" y="37" fill="#d4d4d4" font-family="Menlo, Consolas, monospace" font-size="20" text-anchor="middle">Ubuntu — bash</text>
+  <g font-family="Menlo, Consolas, monospace" font-size="25" xml:space="preserve">
+    <text x="42" y="105" fill="#8be9fd">root@ubuntu</text><text x="212" y="105" fill="#f8f8f2">:/work# chmod +x system_info.sh</text>
+    <text x="42" y="146" fill="#8be9fd">root@ubuntu</text><text x="212" y="146" fill="#f8f8f2">:/work# ./system_info.sh</text>
+    <text x="42" y="187" fill="#f8f8f2">Enter a directory name: </text><text x="406" y="187" fill="#50fa7b">system-report</text>
+    <text x="42" y="245" fill="#f8f8f2">Current Date: Thu Sep  3 17:13:43 UTC 2026</text>
+    <text x="42" y="286" fill="#f8f8f2">Hostname: ubuntu-container</text>
+    <text x="42" y="327" fill="#f8f8f2">Username: root</text>
+    <text x="42" y="393" fill="#ffb86c">Disk Usage:</text>
+    <text x="42" y="434" fill="#f8f8f2">Filesystem      Size  Used Avail Use% Mounted on</text>
+    <text x="42" y="475" fill="#f8f8f2">overlay         453G  5.3G  424G   2% /</text>
+    <text x="42" y="516" fill="#f8f8f2">virtiofs0       461G  340G  121G  74% /work</text>
+    <text x="42" y="582" fill="#ffb86c">Running Processes:</text>
+    <text x="42" y="623" fill="#f8f8f2">USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND</text>
+    <text x="42" y="664" fill="#f8f8f2">root           1  0.0  0.0   4044  3008 ?        Ss   17:13   0:00 bash</text>
+    <text x="42" y="705" fill="#f8f8f2">root           8  0.0  0.0   4044  3048 ?        S    17:13   0:00 bash system_info.sh</text>
+    <text x="42" y="746" fill="#f8f8f2">root          15  0.0  0.0   7640  3644 ?        R    17:13   0:00 ps aux</text>
+    <text x="42" y="812" fill="#50fa7b">Running processes saved to: system-report/running_processes.txt</text>
+    <text x="42" y="878" fill="#8be9fd">root@ubuntu</text><text x="212" y="878" fill="#f8f8f2">:/work# ls -l system-report/running_processes.txt</text>
+    <text x="42" y="919" fill="#f8f8f2">-rw-r--r-- 1 root root 487 Sep  3 17:13 system-report/running_processes.txt</text>
+  </g>
+</svg>
