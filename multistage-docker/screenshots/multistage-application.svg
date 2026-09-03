@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="620" viewBox="0 0 1600 620" role="img" aria-label="Browser showing the Docker multi-stage Hello World application on port 8080">
+  <rect width="1600" height="620" fill="#f3f4f6"/>
+  <rect x="55" y="55" width="1490" height="500" rx="14" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+  <rect x="55" y="55" width="1490" height="60" rx="14" fill="#e5e7eb"/>
+  <circle cx="88" cy="85" r="10" fill="#ef4444"/><circle cx="118" cy="85" r="10" fill="#f59e0b"/><circle cx="148" cy="85" r="10" fill="#22c55e"/>
+  <text x="195" y="92" fill="#374151" font-family="Arial, sans-serif" font-size="24">127.0.0.1:8080</text>
+  <text x="120" y="270" fill="#111827" font-family="Arial, sans-serif" font-size="46" font-weight="700">Hello World from Docker multi-stage build</text>
+  <text x="120" y="340" fill="#6b7280" font-family="Arial, sans-serif" font-size="27">Container: multistage-homework-run</text>
+  <text x="120" y="385" fill="#6b7280" font-family="Arial, sans-serif" font-size="27">Port mapping: 8080 → 8080</text>
+</svg>

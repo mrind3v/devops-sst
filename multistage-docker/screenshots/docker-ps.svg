@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="700" viewBox="0 0 1600 700" role="img" aria-label="Terminal showing docker ps output with multistage application on port 8080">
+  <rect width="1600" height="700" fill="#1e1e1e"/>
+  <rect width="1600" height="58" fill="#303030"/>
+  <circle cx="30" cy="29" r="10" fill="#ff5f57"/><circle cx="62" cy="29" r="10" fill="#ffbd2e"/><circle cx="94" cy="29" r="10" fill="#28c840"/>
+  <text x="800" y="37" fill="#d4d4d4" font-family="Menlo, Consolas, monospace" font-size="20" text-anchor="middle">Terminal</text>
+  <g font-family="Menlo, Consolas, monospace" font-size="22" xml:space="preserve">
+    <text x="42" y="110" fill="#8be9fd">mrind3v@mac</text><text x="210" y="110" fill="#f8f8f2">:~/devops-sst$ docker ps --filter 'name=multistage-homework'</text>
+    <text x="42" y="160" fill="#f8f8f2">CONTAINER ID   IMAGE                        PORTS                         NAMES</text>
+    <text x="42" y="205" fill="#f8f8f2">4a4ad144acf5   multistage-homework-app      0.0.0.0:8080-&gt;8080/tcp      multistage-homework-run</text>
+    <text x="42" y="250" fill="#f8f8f2">02cf288bdfb9   multistage-homework-node     0.0.0.0:8081-&gt;8080/tcp      multistage-homework-node-run</text>
+    <text x="42" y="295" fill="#f8f8f2">929ea5f59abf   multistage-homework-python   0.0.0.0:8082-&gt;8080/tcp      multistage-homework-python-run</text>
+    <text x="42" y="375" fill="#8be9fd">mrind3v@mac</text><text x="210" y="375" fill="#f8f8f2">:~/devops-sst$ curl http://127.0.0.1:8080</text>
+    <text x="42" y="420" fill="#50fa7b">Hello World from Docker multi-stage build</text>
+  </g>
+</svg>
