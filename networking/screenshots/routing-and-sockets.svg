@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Ubuntu terminal showing routing and socket networking commands">
+  <rect width="1600" height="900" fill="#1e1e1e"/>
+  <rect width="1600" height="58" fill="#303030"/>
+  <circle cx="30" cy="29" r="10" fill="#ff5f57"/><circle cx="62" cy="29" r="10" fill="#ffbd2e"/><circle cx="94" cy="29" r="10" fill="#28c840"/>
+  <text x="800" y="37" fill="#d4d4d4" font-family="Menlo, Consolas, monospace" font-size="20" text-anchor="middle">Ubuntu — bash</text>
+  <g font-family="Menlo, Consolas, monospace" font-size="23" xml:space="preserve">
+    <text x="42" y="108" fill="#8be9fd">root@ubuntu</text><text x="212" y="108" fill="#f8f8f2">:/# route -n</text>
+    <text x="42" y="148" fill="#f8f8f2">Kernel IP routing table</text>
+    <text x="42" y="188" fill="#f8f8f2">Destination     Gateway         Genmask         Flags Iface</text>
+    <text x="42" y="228" fill="#f8f8f2">0.0.0.0         172.17.0.1      0.0.0.0         UG    eth0</text>
+    <text x="42" y="268" fill="#f8f8f2">172.17.0.0      0.0.0.0         255.255.0.0     U     eth0</text>
+    <text x="42" y="334" fill="#8be9fd">root@ubuntu</text><text x="212" y="334" fill="#f8f8f2">:/# ip route</text>
+    <text x="42" y="374" fill="#f8f8f2">default via 172.17.0.1 dev eth0</text>
+    <text x="42" y="414" fill="#f8f8f2">172.17.0.0/16 dev eth0 proto kernel scope link src 172.17.0.2</text>
+    <text x="42" y="480" fill="#8be9fd">root@ubuntu</text><text x="212" y="480" fill="#f8f8f2">:/# ss -tuln</text>
+    <text x="42" y="520" fill="#f8f8f2">Netid State Recv-Q Send-Q Local Address:Port Peer Address:Port</text>
+    <text x="42" y="560" fill="#f8f8f2">(no listening sockets in this container)</text>
+    <text x="42" y="626" fill="#8be9fd">root@ubuntu</text><text x="212" y="626" fill="#f8f8f2">:/# netstat -tuln</text>
+    <text x="42" y="666" fill="#f8f8f2">Active Internet connections (only servers)</text>
+    <text x="42" y="706" fill="#f8f8f2">Proto Recv-Q Send-Q Local Address           Foreign Address         State</text>
+    <text x="42" y="746" fill="#f8f8f2">(no listening sockets in this container)</text>
+  </g>
+</svg>
