@@ -8,8 +8,7 @@
 | Roll No. | 24BCS10280 |
 
 ## Task 1: Multi-stage Docker application
-
-The assignment did not provide an external source repository URL. The multi-stage application source and Dockerfile are included in [`multi-stage-app`](multi-stage-app). The Dockerfile compiles the Java application in an Eclipse Temurin JDK build stage and copies only `Main.class` into the Eclipse Temurin JRE runtime stage.
+The Dockerfile compiles the Java application in an Eclipse Temurin JDK build stage and copies only `Main.class` into the Eclipse Temurin JRE runtime stage.
 
 ```bash
 docker build -t multistage-homework-app ./multi-stage-app
