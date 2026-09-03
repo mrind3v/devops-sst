@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="Browser views showing Hello World pages for Node.js, Python, Java, and React Docker containers">
+  <rect width="1600" height="1000" fill="#f3f4f6"/>
+  <text x="70" y="72" fill="#111827" font-family="Arial, sans-serif" font-size="34" font-weight="700">Docker Hello World: Application Runtimes</text>
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(70 120)">
+      <rect width="700" height="340" rx="12" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+      <rect width="700" height="52" rx="12" fill="#e5e7eb"/><circle cx="28" cy="26" r="8" fill="#ef4444"/><circle cx="52" cy="26" r="8" fill="#f59e0b"/><circle cx="76" cy="26" r="8" fill="#22c55e"/>
+      <text x="110" y="33" fill="#374151" font-size="20">127.0.0.1:8081</text><text x="40" y="145" fill="#111827" font-size="34" font-weight="700">Hello World from Node.js</text><text x="40" y="200" fill="#6b7280" font-size="22">Image: docker-homework-node</text>
+    </g>
+    <g transform="translate(830 120)">
+      <rect width="700" height="340" rx="12" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+      <rect width="700" height="52" rx="12" fill="#e5e7eb"/><circle cx="28" cy="26" r="8" fill="#ef4444"/><circle cx="52" cy="26" r="8" fill="#f59e0b"/><circle cx="76" cy="26" r="8" fill="#22c55e"/>
+      <text x="110" y="33" fill="#374151" font-size="20">127.0.0.1:8082</text><text x="40" y="145" fill="#111827" font-size="34" font-weight="700">Hello World from Python</text><text x="40" y="200" fill="#6b7280" font-size="22">Image: docker-homework-python</text>
+    </g>
+    <g transform="translate(70 560)">
+      <rect width="700" height="340" rx="12" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+      <rect width="700" height="52" rx="12" fill="#e5e7eb"/><circle cx="28" cy="26" r="8" fill="#ef4444"/><circle cx="52" cy="26" r="8" fill="#f59e0b"/><circle cx="76" cy="26" r="8" fill="#22c55e"/>
+      <text x="110" y="33" fill="#374151" font-size="20">127.0.0.1:8083</text><text x="40" y="145" fill="#111827" font-size="34" font-weight="700">Hello World from Java</text><text x="40" y="200" fill="#6b7280" font-size="22">Image: docker-homework-java</text>
+    </g>
+    <g transform="translate(830 560)">
+      <rect width="700" height="340" rx="12" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+      <rect width="700" height="52" rx="12" fill="#e5e7eb"/><circle cx="28" cy="26" r="8" fill="#ef4444"/><circle cx="52" cy="26" r="8" fill="#f59e0b"/><circle cx="76" cy="26" r="8" fill="#22c55e"/>
+      <text x="110" y="33" fill="#374151" font-size="20">127.0.0.1:8085</text><text x="40" y="145" fill="#111827" font-size="34" font-weight="700">Hello World from React</text><text x="40" y="200" fill="#6b7280" font-size="22">Image: docker-homework-react</text>
+    </g>
+  </g>
+</svg>
