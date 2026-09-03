@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="640" viewBox="0 0 1440 640">
+  <rect width="1440" height="640" fill="#10151f"/><rect width="1440" height="54" fill="#252d3b"/>
+  <circle cx="28" cy="27" r="10" fill="#ff5f57"/><circle cx="58" cy="27" r="10" fill="#febc2e"/><circle cx="88" cy="27" r="10" fill="#28c840"/>
+  <text x="720" y="34" text-anchor="middle" fill="#d9e1ee" font-family="Menlo, monospace" font-size="18">Ubuntu 24.04 — Docker terminal</text>
+  <g font-family="Menlo, Consolas, monospace" font-size="20" fill="#d9e1ee">
+    <text x="36" y="100" fill="#8be9fd">root@ubuntu:/# journalctl --version | head -1</text>
+    <text x="36" y="136">systemd 255 (255.4-1ubuntu8.17)</text>
+    <text x="36" y="196" fill="#8be9fd">root@ubuntu:/# journalctl -b --no-pager -n 5</text>
+    <text x="36" y="232">-- No entries --</text><text x="36" y="264">No journal files were found.</text>
+    <text x="36" y="324" fill="#8be9fd">root@ubuntu:/# journalctl -u ssh.service --since "1 hour ago" --no-pager -n 20</text>
+    <text x="36" y="360">-- No entries --</text><text x="36" y="392">No journal files were found.</text>
+    <text x="36" y="464" fill="#ffb86c">Note: this is expected in a short-lived Docker container without systemd/journald.</text>
+    <text x="36" y="500" fill="#ffb86c">On a normal Ubuntu host, the same -u command prints the ssh.service journal entries.</text>
+  </g>
+</svg>
