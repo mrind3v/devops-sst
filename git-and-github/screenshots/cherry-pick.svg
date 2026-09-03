@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1040" viewBox="0 0 1600 1040" role="img" aria-label="Terminal showing a git cherry-pick from feature branch into main">
+  <rect width="1600" height="1040" fill="#1e1e1e"/>
+  <rect width="1600" height="58" fill="#303030"/>
+  <circle cx="30" cy="29" r="10" fill="#ff5f57"/><circle cx="62" cy="29" r="10" fill="#ffbd2e"/><circle cx="94" cy="29" r="10" fill="#28c840"/>
+  <text x="800" y="37" fill="#d4d4d4" font-family="Menlo, Consolas, monospace" font-size="20" text-anchor="middle">Ubuntu — bash</text>
+  <g font-family="Menlo, Consolas, monospace" font-size="23" xml:space="preserve">
+    <text x="42" y="105" fill="#8be9fd">student@ubuntu</text><text x="260" y="105" fill="#f8f8f2">:~/git-cherry-pick-lab$ git log --oneline feature-notes -2</text>
+    <text x="42" y="145" fill="#f8f8f2">2ac88c0 feature: add rollback procedure</text>
+    <text x="42" y="185" fill="#f8f8f2">a0b51eb feature: add deployment procedure</text>
+    <text x="42" y="251" fill="#8be9fd">student@ubuntu</text><text x="260" y="251" fill="#f8f8f2">:~/git-cherry-pick-lab$ git switch main</text>
+    <text x="42" y="291" fill="#f8f8f2">Switched to branch 'main'</text>
+    <text x="42" y="357" fill="#8be9fd">student@ubuntu</text><text x="260" y="357" fill="#f8f8f2">:~/git-cherry-pick-lab$ git cherry-pick 2ac88c0</text>
+    <text x="42" y="397" fill="#50fa7b">[main 6872d17] feature: add rollback procedure</text>
+    <text x="42" y="437" fill="#f8f8f2"> 1 file changed, 1 insertion(+)</text>
+    <text x="42" y="503" fill="#8be9fd">student@ubuntu</text><text x="260" y="503" fill="#f8f8f2">:~/git-cherry-pick-lab$ git log --oneline main -5</text>
+    <text x="42" y="543" fill="#f8f8f2">6872d17 feature: add rollback procedure</text>
+    <text x="42" y="583" fill="#f8f8f2">29861f3 main: add verification checklist</text>
+    <text x="42" y="623" fill="#f8f8f2">e2455fd main: add operational note</text>
+    <text x="42" y="663" fill="#f8f8f2">3148762 main: add setup note</text>
+    <text x="42" y="729" fill="#8be9fd">student@ubuntu</text><text x="260" y="729" fill="#f8f8f2">:~/git-cherry-pick-lab$ cat rollback.md</text>
+    <text x="42" y="769" fill="#50fa7b">Rollback procedure from the feature branch.</text>
+  </g>
+</svg>
