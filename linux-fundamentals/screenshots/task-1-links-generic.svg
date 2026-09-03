@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="860" viewBox="0 0 1440 860">
+  <rect width="1440" height="860" fill="#10151f"/>
+  <rect width="1440" height="54" fill="#252d3b"/>
+  <circle cx="28" cy="27" r="10" fill="#ff5f57"/><circle cx="58" cy="27" r="10" fill="#febc2e"/><circle cx="88" cy="27" r="10" fill="#28c840"/>
+  <text x="720" y="34" text-anchor="middle" fill="#d9e1ee" font-family="Menlo, monospace" font-size="18">Ubuntu 24.04 — Docker terminal</text>
+  <g font-family="Menlo, Consolas, monospace" font-size="20" fill="#d9e1ee">
+    <text x="36" y="94" fill="#8be9fd">root@ubuntu:/tmp/link-lab# printf 'Sample file content\n' &gt; original.txt</text>
+    <text x="36" y="130" fill="#8be9fd">root@ubuntu:/tmp/link-lab# ln original.txt hard-link.txt</text>
+    <text x="36" y="166" fill="#8be9fd">root@ubuntu:/tmp/link-lab# ln -s original.txt soft-link.txt</text>
+    <text x="36" y="214" fill="#f1fa8c">== after creating both links ==</text>
+    <text x="36" y="250">60888 -rw-r--r-- 2 root root 20 Sep  3 16:41 hard-link.txt</text>
+    <text x="36" y="282">60888 -rw-r--r-- 2 root root 20 Sep  3 16:41 original.txt</text>
+    <text x="36" y="314">60889 lrwxrwxrwx 1 root root 12 Sep  3 16:41 soft-link.txt -&gt; original.txt</text>
+    <text x="36" y="362" fill="#8be9fd">root@ubuntu:/tmp/link-lab# rm soft-link.txt</text>
+    <text x="36" y="398" fill="#f1fa8c">== after deleting soft link ==</text>
+    <text x="36" y="434">60888 -rw-r--r-- 2 root root 20 Sep  3 16:41 hard-link.txt</text>
+    <text x="36" y="466">60888 -rw-r--r-- 2 root root 20 Sep  3 16:41 original.txt</text>
+    <text x="36" y="514" fill="#8be9fd">root@ubuntu:/tmp/link-lab# rm original.txt</text>
+    <text x="36" y="550" fill="#8be9fd">root@ubuntu:/tmp/link-lab# cat hard-link.txt</text>
+    <text x="36" y="582">Sample file content</text>
+    <text x="36" y="618" fill="#f1fa8c">== after deleting original ==</text>
+    <text x="36" y="654">60888 -rw-r--r-- 1 root root 20 Sep  3 16:41 hard-link.txt</text>
+    <text x="36" y="702" fill="#8be9fd">root@ubuntu:/tmp/link-lab# rm hard-link.txt</text>
+    <text x="36" y="738" fill="#8be9fd">root@ubuntu:/tmp/link-lab# ls -la</text>
+    <text x="36" y="774">total 8</text><text x="36" y="806">drwxr-xr-x 2 root root 4096 Sep  3 16:41 .</text>
+  </g>
+</svg>
