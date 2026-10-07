@@ -9,7 +9,6 @@ Hands-on notes for getting started with Kubernetes using Minikube.
 3. [Kubernetes architecture](#3-kubernetes-architecture)
 4. [Basic Kubernetes objects](#4-basic-kubernetes-objects)
 5. [Kubectl basic commands](#5-kubectl-basic-commands)
-6. [Kubernetes Basics tutorial (hands-on)](#6-kubernetes-basics-tutorial-hands-on)
 
 > Screenshots go in a `screenshots/` folder next to this README. Replace each placeholder with your own capture.
 
@@ -232,104 +231,6 @@ spec:
 ---
 
 
-
-## 6. Kubernetes Basics tutorial (hands-on)
-
-Based on the official [Kubernetes Basics tutorial](https://kubernetes.io/docs/tutorials/kubernetes-basics/).
-
-### Module 1: Create a cluster
-
-```bash
-minikube start
-kubectl version
-kubectl cluster-info
-kubectl get nodes
-```
-
-📸 ![module 1](screenshots/03-create-cluster.png)
-
-### Module 2: Deploy an app
-
-```bash
-kubectl create deployment kubernetes-bootcamp --image=gcr.io/k8s-minikube/kubernetes-bootcamp:v1
-kubectl get deployments
-
-# proxy to reach the API from outside the cluster (run in a second terminal)
-kubectl proxy
-
-export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
-curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME:8080/proxy/
-```
-
-📸 ![module 2](screenshots/04-deploy-app.png)
-
-### Module 3: Explore your app
-
-```bash
-kubectl get pods
-kubectl describe pods
-kubectl logs $POD_NAME
-kubectl exec $POD_NAME -- env
-kubectl exec -ti $POD_NAME -- bash
-```
-
-📸 ![module 3](screenshots/05-explore-app.png)
-
-### Module 4: Expose your app publicly
-
-```bash
-kubectl expose deployment/kubernetes-bootcamp --type="NodePort" --port 8080
-kubectl get services
-kubectl describe services/kubernetes-bootcamp
-
-minikube service kubernetes-bootcamp --url
-curl $(minikube service kubernetes-bootcamp --url)
-
-# labels
-kubectl describe deployment
-kubectl get pods -l app=kubernetes-bootcamp
-kubectl label pods $POD_NAME version=v1
-kubectl get pods -l version=v1
-
-# cleanup service
-kubectl delete service -l app=kubernetes-bootcamp
-```
-
-📸 ![module 4](screenshots/06-expose-app.png)
-
-### Module 5: Scale your app
-
-```bash
-kubectl scale deployments/kubernetes-bootcamp --replicas=4
-kubectl get deployments
-kubectl get pods -o wide
-kubectl scale deployments/kubernetes-bootcamp --replicas=2
-```
-
-📸 ![module 5](screenshots/07-scale-app.png)
-
-### Module 6: Update your app (rolling update)
-
-```bash
-kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v2
-kubectl rollout status deployments/kubernetes-bootcamp
-
-# simulate a bad update and roll back
-kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=gcr.io/google-samples/kubernetes-bootcamp:v10
-kubectl get pods
-kubectl rollout undo deployments/kubernetes-bootcamp
-```
-
-📸 ![module 6](screenshots/08-update-app.png)
-
-### Cleanup
-
-```bash
-kubectl delete deployment kubernetes-bootcamp
-minikube stop
-```
-
----
 
 ## Key takeaways
 
